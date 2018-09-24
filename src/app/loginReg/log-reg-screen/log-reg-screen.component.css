@@ -1,0 +1,156 @@
+#background{
+	background-color: #000;
+	background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(src/assets/images/sky-cloud.jpg);
+	background-position: center;
+	background-size: cover;
+	display: table;
+	height: 100vh;
+	width: 100%;
+}
+
+#loginContainer * {
+	color: #fff;
+	font-family: Georgia, Times, serif;
+	font-weight: normal;
+	line-height: 1em;
+	box-sizing: border-box;
+}
+
+#loginContainer{
+	width: 80%;
+	margin: 0 auto;
+	position: relative;
+	max-width: 1024px;
+}
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    #fff;
+    opacity:  0.6;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    #fff;
+   opacity:  0.6;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    #fff;
+   opacity:  0.6;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color:    #fff;
+   opacity:  0.6;
+}
+::-ms-input-placeholder { /* Microsoft Edge */
+   color:    #fff;
+   opacity:  0.6;
+}
+::placeholder { /* Most modern browsers support this now. */
+   color:    #fff;
+   opacity:  0.6;
+}
+
+#inputContainer{
+	width: 400px;
+	padding: 45px;
+	float: right;
+	border-left: 1px solid #999;
+}
+
+#inputContainer h2{
+	text-align: center;
+	text-transform: uppercase;
+}
+
+#inputContainer input[type="text"],
+#inputContainer input[type="email"],
+#inputContainer input[type="password"]{
+	display: block;
+	background-color: transparent;
+	border: 0;
+	border-bottom: 1px solid #fff;
+	height: 27px;
+	line-height: 27px;
+	width: 100%;
+	margin: 10px auto;
+    text-align: center;
+}
+
+#inputContainer label{
+	color: #f9c059;
+    margin-top: 15px;
+    font-size: 15px;
+    display: block;
+}
+
+#inputContainer button{
+	background-color: transparent;
+    border: 2px solid #fff;
+    border-radius: 250px;
+    color: #fff;
+    display: block;
+    font-size: 16px;
+    letter-spacing: 1px;
+    margin: 40px auto;
+    height: 41px;
+    width: 100%;
+}
+
+#inputContainer button:hover{
+	cursor: pointer;
+}
+
+.ifHasAccount span{
+	font-weight: normal;
+	font-size: 12px;
+	cursor: pointer;
+}
+
+.ifHasAccount{
+	text-align: center;
+}
+
+#registerForm,
+#loginForm{
+	/* display: block; */
+	text-align: center;
+}
+
+#loginFormSideText{
+	padding: 45px;
+	display: table-cell;
+}
+
+#loginFormSideText h1{
+	color: #ff2323;
+    font-size: 60px;
+    font-weight: bold;
+    font-family: Georgia, Times, serif;
+    text-align: center;
+}
+
+#loginFormSideText h2{
+	margin: 35px 0;
+	font-family: "Georgia", "Times", serif;
+	text-align: center;
+}
+
+#loginFormSideText ul{
+	padding: 0;
+	text-align: center;
+	padding: 13px 30px;
+}
+
+#loginFormSideText li{
+	font-size: 20px;
+	font-family: Georgia, Times, serif;
+	list-style-type: none;
+	padding: 13px 60px;
+	background: url(src/assets/images/icons/heart.png) no-repeat; 
+}
+
+#inputContainer .errorMessage{
+	color: #00ffc4c7;
+    font-size: 13px;
+    display: block;
+    margin-top: 15px;
+}
+
