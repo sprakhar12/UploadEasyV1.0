@@ -1,0 +1,72 @@
+#topContainer{
+	min-height: 100%;
+	width: 100%;
+}
+
+#navBarContainer{
+	background-color: #000;
+	width: 220px;
+	height: 100vh;
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+
+.navBar{
+	padding: 25px;
+	display: flex;
+	flex-direction: column;
+	-ms-flex-direction: column;
+}
+
+.navBar .group{
+	border-top: 1px solid #a0a0a0;
+	padding: 10px 0;
+}
+
+.navItem{
+	padding: 10px 0;
+	font-size: 14px;
+	font-weight: 700;
+	display: block;
+	letter-spacing: 1px;
+	position: relative;
+}
+
+.navItemLink{
+	color: #a0a0a0;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.navItemLink:hover{
+	color: #fff;
+}
+
+
+
+#uploadContainer{
+    background: linear-gradient( rgba(59, 67, 91, 1), rgba(152, 163, 196, 0.4) );
+    display: flex;
+    width: 0 auto;
+	height: 100vh;
+    padding-bottom: 100px;
+    padding-left: 100px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+input[type=file]{
+    color: rgb(7, 54, 56);
+    font-weight: bold;
+}
+
+.btnProperties{
+    border: 2px solid black;
+    border-radius: 16px;
+    width: 20%;
+    background: #0000143b;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}

@@ -7,62 +7,23 @@
       <br>
       <br>
       <!-- Login -->
-      <form [hidden]="showSelected" id="loginForm">
+      <div id="loginForm">
         <h2>Login account</h2>
         <p>
-          <label for="loginUsername">Username</label>
-          <input id="loginUsername" name="loginUsername" type="text" placeholder="your username" required>
+          <label for="loginUsername">Email</label>
+          <input id="loginUsername" name="loginUsername" type="text" placeholder="your username" required #loginemail>
         </p>
         <p>
           <label for="loginPassword">Password</label>
-          <input id="loginPassword" name="loginPassword" type="password" placeholder="your password" required>
+          <input id="loginPassword" name="loginPassword" type="password" placeholder="your password" required #loginpassword>
         </p>
-        <button type="submit" name="loginButton">LOGIN</button>
+        <button (click)="loginUser(loginemail, loginpassword)" name="loginButton">LOGIN</button>
 
         <div class="ifHasAccount">
-          <span (click)="showRegister()" id="hideLoginForm">Don't have an account yet? Create one here for <em>FREE</em>.</span>
+          <span [routerLink]="['/signup']" id="hideLoginForm">Don't have an account yet? Create one here for <em>FREE</em>.</span>
         </div>
+      </div>
 
-      </form>
-
-      <!-- Register -->
-      <form [hidden]="!showSelected" id="registerForm">
-        <h2>Create your account</h2>
-        <p>
-          <label for="username">Username</label>
-          <input id="username" name="username" type="text" placeholder="e.g. macWin" required>
-        </p>
-        <p>
-          <label for="firstname">First name</label>
-          <input id="firstname" name="firstname" type="text" placeholder="e.g. Mac" required>
-        </p>
-        <p>
-          <label for="lastname">Last name</label>
-          <input id="lastname" name="lastname" type="text" placeholder="e.g. Win" required>
-        </p>
-        <p>
-          <label for="email">Email</label>
-          <input id="email" name="email" type="email" placeholder="e.g. win@outlook.com" required>
-        </p>
-        <p>
-          <label for="email2">Confirm email</label>
-          <input id="email2" name="email2" type="email" placeholder="e.g. win@outlook.com" required>
-        </p>
-        <p>
-          <label for="password">Password</label>
-          <input id="password" name="password" type="password" placeholder="Your password" required>
-        </p>
-        <p>
-          <label for="password2">Confirm password</label>
-          <input id="password2" name="password2" type="password" placeholder="Your password" required>
-        </p>
-        <button type="submit" name="registerButton">SIGN UP</button>
-
-        <div class="ifHasAccount">
-          <span (click)="showLogin()" id="hideRegisterForm">Already have an account? log in here</span>
-        </div>
-
-      </form>
     </div>
 
     <br>
@@ -71,7 +32,7 @@
       <h1>Upload Easy</h1>
       <h2>Video Management System</h2>
       <ul>
-        <li>Lets you upload media files to AWS S3</li>
+        <li>Lets you upload media files to firestore</li>
         <li>Show them in action all at one place</li>
         <li>Ofcourse it's free</li>
       </ul>

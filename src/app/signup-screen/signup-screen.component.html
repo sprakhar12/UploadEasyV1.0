@@ -1,0 +1,33 @@
+<div id="background">
+
+    <div id="loginContainer">
+  
+      <div id="inputContainer"> 
+
+          <!-- Register -->
+          <div id="registerForm">
+              <h2>Create your account</h2>
+              <p>
+                <label for="username">Username</label>
+                <input id="username" name="username" type="text" placeholder="e.g. winMac" required #username>
+              </p>
+              <p>
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" placeholder="e.g. win@outlook.com" required #useremail>
+              </p>
+              <p>
+                <label for="password">Password</label>
+                <input id="password" name="password" type="password" placeholder="Your password" required #pwd>
+              </p>
+
+              <button (click)="registerUser(useremail, pwd)" name="registerButton">SIGN UP</button>
+
+              <div class="ifHasAccount">
+                <span [routerLink]="['']" id="hideRegisterForm">Already have an account? log in here</span>
+              </div> 
+
+            </div>
+      </div>
+
+    </div>
+</div>

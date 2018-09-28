@@ -1,6 +1,6 @@
 #background{
 	background-color: #000;
-	background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../../../assets/images/sky-cloud.jpg);
+	background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../../assets/images/sky-cloud.jpg);
 	background-position: center;
 	background-size: cover;
 	display: table;
@@ -49,10 +49,10 @@
 }
 
 #inputContainer{
+	margin: 0 auto;
 	width: 400px;
 	padding: 45px;
-	float: right;
-	border-left: 1px solid #999;
+	/* border-left: 1px solid #999; */
 }
 
 #inputContainer h2{
@@ -108,48 +108,7 @@
 	text-align: center;
 }
 
-#loginForm{
-	/* display: block; */
+#registerForm
+{
 	text-align: center;
 }
-
-#loginFormSideText{
-	padding: 45px;
-	display: table-cell;
-}
-
-#loginFormSideText h1{
-	color: #a4aff6cf;
-    font-size: 60px;
-    font-weight: bold;
-    font-family: Georgia, Times, serif;
-    text-align: center;
-}
-
-#loginFormSideText h2{
-	margin: 35px 0;
-	font-family: "Georgia", "Times", serif;
-	text-align: center;
-}
-
-#loginFormSideText ul{
-	padding: 0;
-	text-align: center;
-	padding: 13px 30px;
-}
-
-#loginFormSideText li{
-	font-size: 20px;
-	font-family: Georgia, Times, serif;
-	list-style-type: none;
-	padding: 13px 60px;
-	background: url(../../../assets/images/icons/heart.png) no-repeat; 
-}
-
-#inputContainer .errorMessage{
-	color: #00ffc4c7;
-    font-size: 13px;
-    display: block;
-    margin-top: 15px;
-}
-

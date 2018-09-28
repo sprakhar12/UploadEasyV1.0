@@ -1,0 +1,62 @@
+<div id="mainContainer">
+
+		<div id="topContainer">
+
+        <div id=navBarContainer>
+            <nav class="navBar">
+          
+              <div class="group">
+                <div class="navItem">
+                  <a class="navItemLink">Hello User</a>
+                </div>
+              </div>
+          
+              <div class="group">
+                <div class="navItem">
+                  <a class="navItemLink">Images</a>
+                </div>
+              </div>
+
+              <div class="group">
+                  <div class="navItem">
+                    <a class="navItemLink">Videos</a>
+                  </div>
+              </div>
+
+              <div class="group">
+                  <div class="navItem">
+                    <a (click)="logOut()" class="navItemLink">Logout</a>
+                  </div>
+              </div>
+          
+            </nav>
+          </div>
+
+
+
+          <div id="uploadContainer">
+
+              <div style="width: 50%" *ngIf="percentage | async as pct">
+            
+                    <progress style="width:100%; border-radius: 16px" [value]="pct" max="100"></progress>
+                
+              </div>
+              
+              <br>
+            
+              <!-- <div id="uploadTools"> -->
+            
+                  <input type="file" (change)="onFileSelected($event)" value="upload" id="fileButton" />
+                  
+                  <br>
+                
+                  <button class="btnProperties btn-primary" type="button" (click)="onUpload()">Upload</button>    
+              <!-- </div> -->
+              
+            </div>
+
+
+            
+
+    </div>
+</div>
